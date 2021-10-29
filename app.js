@@ -32,3 +32,5 @@ menuClosebtn.onclick = function hideMenu() {
     menuClosebtn.style.display = "none";
     footer.style.marginLeft = "0rem";
 }
+
+
