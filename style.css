@@ -707,6 +707,11 @@ footer h1{
   .about .row .image img{
     width: 20rem;
   }
+  #button{
+  position: absolute;
+  top: 48rem;
+  left: 36rem;
+}
 }
 
 /* Large screens */
@@ -963,4 +968,43 @@ footer h1{
       width:100%;
   }
 
+}
+
+
+
+
+
+/* scroll back to top */
+
+#button {
+  display: inline-block;
+  background-color:#dc3545;
+  width: 50px;
+  height: 50px;
+  line-height:60px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: background-color .3s, 
+  opacity .5s, visibility .5s;
+  opacity: 0;
+  z-index: 1000;
+}
+
+#button i{
+  font-size:32px;
+  color:white;
+}
+
+
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button.show {
+  opacity: 1;
 }
